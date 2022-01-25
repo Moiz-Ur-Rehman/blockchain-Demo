@@ -1,0 +1,98 @@
+.block{
+    background-color: rgb(224, 228, 230);
+    width: 500px;
+    margin: 10px 20px 50px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    display: inline-block;
+}
+#block-mined{
+    background-color: rgb(223, 103, 103);
+}
+.blockchain-container{
+    padding: 20px 40px;
+}
+.block h2{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.block span{
+    font-weight: normal;
+}
+.block .hash{
+    overflow-x: scroll;
+    font-weight: normal;
+}
+.blockchain-container .hash-container{
+    display: flex;
+}
+.blockchain-container .hash-container h2{
+    margin-right: 10px;
+}
+.hash {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.hash::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.blockchain-container .transactions{
+    display: flex;
+    margin-bottom: 20px;
+}
+.blockchain-container .transactions label{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.blockchain-container .transactions #transaction{
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(243, 241, 241);
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+}
+.button{
+    visibility: hidden;
+}
+#loading{
+    display: none;
+    cursor: default;
+}
+#not-allowed{
+    cursor: not-allowed;
+}
+#loading-animation{
+    border-top: 2px solid green;
+    border-bottom: 2px solid gray;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin 1s infinite linear}@keyframes spin{from{transform: rotate(0deg);} to{transform: rotate(360deg);}
+}
+.loader-wrap1{
+    height: 18px;
+    width: 18px;
+    border-left: 2px solid yellow;
+    border-radius: 100%;
+}
+.loader-wrap2{
+    height: 16px;
+    width: 16px;
+    border-right: 2px solid blue;
+    border-radius: 100%;
+}
+.blockchain-container button{
+    padding: 6px 20px;
+    border: none;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}
